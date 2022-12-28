@@ -1,0 +1,126 @@
+html{
+  /*why border-box? 
+  because width + padding + border = actual width of an element
+  height + padding + border = actual height of an element
+  that is the size of the box would change if we change padding or border but in border box the width is fixed by the user and every other thing has to adjust inside the width visit https://www.w3schools.com/css/css3_box-sizing.asp for more info*/
+  box-sizing:border-box;
+  font-family:'karla';
+  font-size:16px;
+  font-weight:400;
+}
+
+h2,h4,p{
+  margin:0;
+}
+
+/* selects evrything and gives them box sizing as their parent i.e border-box */
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  padding:20px;
+}
+
+#card{
+  width:600px;
+  height:400px;
+/*   border:2px solid blue; */
+  box-shadow: 19px 19px 0px -13px rgba(0,0,0,0.2);
+  border-radius:5px;
+  overflow:hidden;
+}
+
+#top-section{
+  width:100%;
+  height:45%;
+  padding:25px;
+/*   border:2px solid green; */
+}
+
+#bottom-section{
+  width:100%;
+  height:55%;
+  color:white;
+/*   border:2px solid red; */
+}
+
+#bottom-left{
+  width:50%;
+  height:100%;
+/*   border:2px solid orange; */
+  display:inline-block;
+  vertical-align:top;
+  background-color:#1466e0;
+  padding:25px;
+}
+/* inline-block makes them side by side but the catch is you have to have both the div consecutevily you can see from above if you have space between two div tags the white space would unable us from bringing them side by side  */
+#bottom-right{
+  width:50%;
+  height:100%;
+/*   border:2px solid black; */
+  display:inline-block;
+  vertical-align:top;
+  background-color:#147ee0;
+  padding:25px;
+}
+
+#top-section h2{
+  color:#147ee0;
+  margin-bottom:20px;
+}
+
+#top-section h4{
+  color:#7014e0;
+  margin-bottom:10px;
+}
+
+#top-section p{
+  color:#77a2a8;
+}
+
+#price{
+  font-weight:700;
+  font-size:1.4rem;
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+#price-frequency{
+  display:inline-block;
+  font-size:0.8rem;
+  position:relative;
+  top:-3px;
+  left:6px;
+  opacity:0.7;
+}
+
+#bottom-left p{
+  font-size:0.7rem;
+  margin-bottom:10px;
+}
+
+button{
+  background-color:#1ee5e8;
+  color:black;
+  border:none;
+  padding:10px;
+  width:100%;
+  border-radius:5px;
+  margin-top:20px;
+}
+
+button:hover{
+  cursor:pointer;
+  background-color:#14F579;
+  transform:scale(1.04);
+}
+
+ul{
+  padding:0;
+  list-style:none;
+  font-size:0.8rem;
+  opacity:0.9;
+  line-height:1.5 ;
+}
