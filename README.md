@@ -1,2 +1,3 @@
 # pricing-card
-An implimentation of the frontend mentor code challenge
+An implimentation of the frontend programme
+
